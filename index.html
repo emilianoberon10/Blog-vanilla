@@ -14,25 +14,28 @@
   </head>
   <body>
     <main class="container">
-      <section class="hero">
-        <h1 class="hero__title">Curso escencial de HTML y Css</h1>
+      <header class="hero">
+        <h1 class="hero__title">Curso esencial de HTML y CSS</h1>
         <p class="hero__text">
           Este es el inicio de tu carrera como Desarrollador Web, empezarás
           aprendiendo HTML y CSS para la creacion de contenidos, en el nivel 2
           aprenderas de componentes y en 3 sobre layout
         </p>
-      </section>
-      <header class="navigation">
+      </header>
+      <!-- indice de la pagina -->
+      <nav class="index">
         <h4 class="navigation_title">Contenido</h4>
-        <nav class="index">
-          <h4>Setup</h4>
+        <details>
+          <summary>Setup</summary>
           <ol>
             <li><a href="">Google Chrome</a></li>
             <li><a href="">Visual Studio Code</a></li>
             <li><a href="">Figma</a></li>
             <li><a href="">GitHub</a></li>
           </ol>
-          <h4>Conceptos esenciales del Desarrollo Web</h4>
+        </details>
+        <details>
+          <summary>Conceptos esenciales del Desarrollo Web1</summary>
           <ol>
             <li><a href="">Qué es HTML</a></li>
             <li><a href="">Etiquetas</a></li>
@@ -41,8 +44,9 @@
             <li><a href="">Atributos</a></li>
             <li><a href="">Qué es CSS</a></li>
           </ol>
-        </nav>
-      </header>
+        </details>
+      </nav>
+      <!-- contenido del blog -->
       <section class="setup">
         <h2 class="setup__title">Setup</h2>
         <div class="setup__element">
@@ -105,6 +109,174 @@
           </p>
         </div>
       </section>
+      <section class="concepts">
+        <h2>Conceptos esenciales del Desarrollo Web</h2>
+        <div>
+          HTML
+          <p>
+            Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el
+            componente más básico de la web. Define el significado y la
+            estructura del contenido.
+          </p>
+          <pre>
+  &lt;!DOCTYPE html&gt;
+  &lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  
+  &lt;/body&gt;
+  &lt;/html&gt;
+              </pre
+          >
+        </div>
+        <div>
+          Etiquetas
+          <div>
+            <p>
+              Las etiquetas HTML van a ayudarnos a brindar una estructura y
+              semántica al contenido de nuestro website y cada una tiene
+              características y usos diferentes aunque visualmente den un
+              resultado similar.
+            </p>
+            <p>
+              Muchas etiquetas son fácil de diferencias como los headings o las
+              imágenes y otras diferentes como header, footer, section o div,
+              aquí es donde la semántica será la respuesta y si sabemos un poco
+              de inglés también podremos darnos una pequeña idea de su uso pero
+              en este curso vamos a usar las más importantes y que serán parte
+              de tu día a día como Software Developer.
+            </p>
+          </div>
+        </div>
+        <div>
+          DOM
+          <div>
+            <p>
+              El Document Object Model es una estructura de árbol que
+              representará todos nuestros proyectos web como si un árbol
+              genealógico fuera: padres, hijos, hermanos con niveles infinitos.
+              cuando entendemos esta anidación podemos identificar dependencias,
+              herencias en css y que tan complejo es nuestro proyecto.
+            </p>
+            <img
+              src="./images/DOM.png"
+              alt="Imagen de la estructura del DOM"
+              title="Estructura del DOM"
+              width="966"
+              height="504"
+            />
+          </div>
+        </div>
+        <div>
+          Semantica
+          <p>
+            La semántica le brinda sentido a cada elemento existen en un sitio
+            web, algunos elementos será meramente decorativos y no deben
+            significar nada pero otros serán títulos y deberán estar en
+            diferente jerarquías o alguna secciones serán más relevantes que
+            otras, esto ayudará a los motores de búsqueda como Google o Duck
+            Duck Go a diferenciar tu contenido, categorizar y será la
+            herramientas más valiosa para estar en los primeros resultados de
+            búsqueda SEO. También ayudará a la accesibilidad de tu sitio web,
+            para que personas con habilidades diferentes puedan entender cada
+            contenido.
+          </p>
+        </div>
+        <div>
+          Atributos
+          <p>
+            Los atributos le dan características extra a las etiquetas para
+            complementar información y son pre programadas por el navegador,
+            algunos atributos funcionan en todas las etiquetas de la misma forma
+            como ‘class’ pero otros atributos funcionan en solo alguna etiquetas
+            como src
+          </p>
+        </div>
+        <div>
+          CSS
+          <div>
+            <p>
+              Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o
+              CSS es el lenguaje de estilos utilizado para describir la
+              presentación de documentos HTML
+            </p>
+            <img
+              src="./images/css.png"
+              alt="Imagen ilustrativa de codigo csss"
+              width="966"
+              height="458"
+            />
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Modelo de caja</h2>
+        <p>
+          Chrome va a ser el navegador que utilizaremos en el curso por su
+          extenso soporte de nuevos estándares y herramientas de desarrollo
+          avanzadas y de amigable uso.
+        </p>
+        <ol>
+          <li>Tamaño del del contenido / ancho y alto</li>
+          <li>Padding / Relleno</li>
+          <li>Border / Bordes</li>
+          <li>Margin / Márgenes</li>
+        </ol>
+        <h3>Propiedades físicas para el modelo de caja:</h3>
+        <ul>
+          <li>width / height</li>
+          <li>
+            margin / margin-top | margin-right | margin-bottom | margin-left
+          </li>
+          <li>
+            border / border-top | border-right | border-bottom | border-left
+          </li>
+          <li>
+            padding / padding-top | padding-right | padding-bottom |
+            padding-left
+          </li>
+        </ul>
+        <h3>Propiedades lógicas para el modelo de caja:</h3>
+        <ul>
+          <li>inline-size / block-size</li>
+          <li>
+            margin-block | margin-inline | margin-block-start | margin-block-end
+            | margin-inline-start | margin-inline-end
+          </li>
+          <li>
+            border-block | border-inline | border-block-start | border-block-end
+            | border-inline-start | border-inline-end
+          </li>
+          <li>
+            padding-block | padding-inline | padding-block-start |
+            padding-block-end | padding-inline-start | padding-inline-end
+          </li>
+        </ul>
+        <h3>Modelo de caja</h3>
+        <img src="./images/leo.png" alt="" />
+      </section>
+      <p>
+        Si tienes alguna pregunta escríbeme a
+        <a href="">me@leonidasesteban.com</a>
+      </p>
+      <form action="">
+        <h3>Suscríbete a nuestro newsletter</h3>
+        <input type="text" placeholder="Nombre" name="" id="" />
+        <input type="text" placeholder="Email" name="" id="" />
+        <button type="submit">Suscribirme</button>
+      </form>
     </main>
+    <footer>
+      <h2>© Emiliano Beron 2021</h2>
+      <div class="social">
+        <a href="">ins</a>
+        <a href="">face</a>
+        <a href="">twitter</a>
+      </div>
+    </footer>
   </body>
 </html>
