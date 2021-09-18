@@ -1,0 +1,56 @@
+:root {
+  --font-inter: 'Inter', sans-serif;
+  --white: hsl(255, 255, 255, 100%);
+  --bg-gray: hsl(0, 0, 90, 100%);
+  --light-gray: hsl(0, 0, 38, 100%);
+  --dark: hsl(0, 0, 26, 100%);
+  --darker: hsl(0, 0, 13, 100%);
+}
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+body {
+  background: var(--white);
+  font-family: var(--font-inter);
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --h1: 400 3.75rem / auto Inter;
+  --h2: 400 2rem / auto Inter;
+  --h3: 400 1.5rem / auto Inter;
+  --h4: 400 0.875rem/1.5rem Inter;
+  --body: 400 1rem/1.5rem Inter;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin-top: 0;
+}
+h1 {
+  font: var(--h1);
+  margin-bottom: 0.1875rem;
+}
+@media (min-width: 71.875em) {
+  h1 {
+    font-size: 4.5rem;
+  }
+}
+h2 {
+  color: var(--text-color2);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
