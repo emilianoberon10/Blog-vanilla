@@ -1,9 +1,9 @@
 @use '../util' as *;
 
 :root {
-  --h1: 400 3.75rem / auto Inter;
-  --h2: 400 2rem / auto Inter;
-  --h3: 400 1.5rem / auto Inter;
+  --h1: 400 3.75rem Inter;
+  --h2: 400 2rem Inter;
+  --h3: 400 1.5rem Inter;
   --h4: 400 0.875rem/1.5rem Inter;
   --body: 400 1rem/1.5rem Inter;
 }
@@ -16,17 +16,15 @@ h3 {
 }
 
 h1 {
-  font: var(--h1);
+  font: var(--h2);
   margin-bottom: rem(3);
-  @include breakpoint(large) {
-    font-size: rem(72);
+  @include breakpoint(medium) {
+    font: var(--h1);
   }
 }
 
 h2 {
-  font-size: rem(24);
-  margin-bottom: rem(24);
-  color: var(--text-color2);
+  font: var(--h2);
 }
 
 a,

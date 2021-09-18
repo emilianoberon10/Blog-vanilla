@@ -1,0 +1,16 @@
+@use '../util' as *;
+
+.container {
+  margin-block: rem(40);
+  margin-inline: rem(16);
+  @include breakpoint(medium) {
+    margin-block: rem(80);
+    margin-inline: rem(192);
+  }
+  section {
+    width: 100%;
+  }
+  p {
+    width: 100%;
+  }
+}
