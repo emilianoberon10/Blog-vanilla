@@ -1,0 +1,25 @@
+@use '../util' as *;
+.index {
+  margin-block-end: rem(40);
+  .navigation_title {
+    text-transform: uppercase;
+    font: var(--h4);
+  }
+  .index-details {
+    border-left: 4px solid hsl(0, 0%, 77%);
+    padding-inline: rem(16);
+    summary {
+      font: var(--h4);
+      font-weight: bold;
+      color: var(--light-gray);
+    }
+    details ol {
+      li {
+        margin-block: rem(16);
+      }
+    }
+  }
+  ol > li > a {
+    color: var(--light-gray);
+  }
+}

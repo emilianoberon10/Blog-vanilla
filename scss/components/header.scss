@@ -1,1 +1,7 @@
-
+@use '../util' as *;
+.hero {
+  margin-block-end: rem(40);
+  .hero__title {
+    margin-block-end: rem(16);
+  }
+}
