@@ -5,6 +5,8 @@
   --h2: 400 2rem Inter;
   --h3: 400 1.5rem Inter;
   --h4: 400 0.875rem/1.5rem Inter;
+  --subTitle: 400 1.25rem Inter;
+  --list: 400 1rem/1.5rem Inter;
   --body: 400 1rem/1.5rem Inter;
 }
 
@@ -26,7 +28,10 @@ h1 {
 h2 {
   font: var(--h2);
 }
-
+p {
+  font: var(--body);
+  color: var(--dark);
+}
 a,
 a:visited,
 a:active {
