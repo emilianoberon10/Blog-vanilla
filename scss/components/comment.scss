@@ -1,0 +1,12 @@
+@use '../util' as *;
+.commment {
+  border-left: 4px solid hsl(0deg, 0%, 13%);
+  padding-inline-start: 1em;
+  margin-block-end: rem(40);
+  p {
+    color: var(--dark);
+  }
+  span {
+    color: var(--light-gray);
+  }
+}
