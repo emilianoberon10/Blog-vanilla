@@ -1,0 +1,23 @@
+@use '../util' as *;
+.footer {
+  color: var(--white);
+  text-align: center;
+  background-color: hsl(218deg, 11%, 15%);
+  padding-inline: rem(42);
+  padding-block-start: rem(48);
+  padding-block-end: rem(58);
+  .copyright {
+    font: var(--h3);
+    margin-block-end: 16px;
+  }
+  .social-links {
+    margin-inline: 16px;
+    a {
+      margin-inline: 16px;
+      i {
+        font-size: 1.25rem;
+        color: var(--white);
+      }
+    }
+  }
+}

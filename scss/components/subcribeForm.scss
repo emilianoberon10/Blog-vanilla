@@ -1,0 +1,18 @@
+.subcription {
+  .form-title {
+    font: var(--subTitle);
+    color: var(--dark);
+  }
+  .input,
+  .button {
+    font: var(--body);
+    border-radius: 90px;
+    padding-block: 12px;
+    padding-inline: 16px;
+    margin-block-end: 16px;
+  }
+  .button {
+    background-color: rgb(0, 0, 0);
+    color: var(--white);
+  }
+}

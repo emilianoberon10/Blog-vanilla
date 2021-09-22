@@ -1,0 +1,10 @@
+@use '../util' as *;
+.galery {
+  img {
+    width: 328px;
+    @include breakpoint(medium) {
+      width: 966px;
+      height: 500px;
+    }
+  }
+}
