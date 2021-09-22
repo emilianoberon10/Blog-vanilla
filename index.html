@@ -6,11 +6,9 @@
     <title>El Blog de Emi</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./dist/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <main class="container">
@@ -25,30 +23,33 @@
       <!-- indice de la pagina -->
       <nav class="index">
         <h4 class="navigation_title">Contenido</h4>
-        <details>
-          <summary>Setup</summary>
-          <ol>
-            <li><a href="">Google Chrome</a></li>
-            <li><a href="">Visual Studio Code</a></li>
-            <li><a href="">Figma</a></li>
-            <li><a href="">GitHub</a></li>
-          </ol>
-        </details>
-        <details>
-          <summary>Conceptos esenciales del Desarrollo Web1</summary>
-          <ol>
-            <li><a href="">Qué es HTML</a></li>
-            <li><a href="">Etiquetas</a></li>
-            <li><a href="">DOM</a></li>
-            <li><a href="">Semantica</a></li>
-            <li><a href="">Atributos</a></li>
-            <li><a href="">Qué es CSS</a></li>
-          </ol>
-        </details>
+        <div class="index-details">
+          <details>
+            <summary>Setup</summary>
+            <ol>
+              <li><a href="">Google Chrome</a></li>
+              <li><a href="">Visual Studio Code</a></li>
+              <li><a href="">Figma</a></li>
+              <li><a href="">GitHub</a></li>
+            </ol>
+          </details>
+          <details>
+            <summary>Conceptos esenciales del Desarrollo Web</summary>
+            <ol>
+              <li><a href="">Qué es HTML</a></li>
+              <li><a href="">Etiquetas</a></li>
+              <li><a href="">DOM</a></li>
+              <li><a href="">Semantica</a></li>
+              <li><a href="">Atributos</a></li>
+              <li><a href="">Qué es CSS</a></li>
+            </ol>
+          </details>
+        </div>
       </nav>
+      <hr>
       <!-- contenido del blog -->
-      <section class="setup">
-        <h2 class="setup__title">Setup</h2>
+      <section class="post setup">
+        <h2 class="post-title">Setup</h2>
         <div class="setup__element">
           <h3 class="element_title">Google Chrome</h3>
           <img
@@ -109,21 +110,28 @@
           </p>
         </div>
       </section>
-      <section class="concepts">
-        <h2>Conceptos esenciales del Desarrollo Web</h2>
-        <div>
-          HTML
+      <div class="commment">
+        <p>“Este es el inicio de tu carrera como Desarrollador Web”</p>
+        <span>- Leonidas Esteban</span>
+      </div>
+      <section class="post concepts">
+        <h2 class="post-title">Conceptos esenciales del Desarrollo Web</h2>
+        <div class="post-element">
+          <h3>1. HTML</h3>
           <p>
             Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el
             componente más básico de la web. Define el significado y la
             estructura del contenido.
           </p>
-          <pre>
+          <div class="html-code">
+            <pre>
   &lt;!DOCTYPE html&gt;
   &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
   &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; 
+  content=&quot;width=device-width, 
+  initial-scale=1.0&quot;&gt;
   &lt;title&gt;Document&lt;/title&gt;
   &lt;/head&gt;
   &lt;body&gt;
@@ -131,10 +139,11 @@
   &lt;/body&gt;
   &lt;/html&gt;
               </pre
-          >
+            >
+          </div>
         </div>
-        <div>
-          Etiquetas
+        <div class="post-element">
+          <h3 class="element_title">2. Etiquetas</h3>
           <div>
             <p>
               Las etiquetas HTML van a ayudarnos a brindar una estructura y
@@ -152,8 +161,8 @@
             </p>
           </div>
         </div>
-        <div>
-          DOM
+        <div class="post-element">
+          <h3 class="element_title">3. DOM</h3>
           <div>
             <p>
               El Document Object Model es una estructura de árbol que
@@ -163,16 +172,16 @@
               herencias en css y que tan complejo es nuestro proyecto.
             </p>
             <img
+              class="post-img"
               src="./images/DOM.png"
               alt="Imagen de la estructura del DOM"
               title="Estructura del DOM"
-              width="966"
-              height="504"
+              height="171"
             />
           </div>
         </div>
-        <div>
-          Semantica
+        <div class="post-element">
+          <h3 class="element_title">4. Semantica</h3>
           <p>
             La semántica le brinda sentido a cada elemento existen en un sitio
             web, algunos elementos será meramente decorativos y no deben
@@ -186,8 +195,8 @@
             contenido.
           </p>
         </div>
-        <div>
-          Atributos
+        <div class="post-element">
+          <h3 class="element_title">5. Atributos</h3>
           <p>
             Los atributos le dan características extra a las etiquetas para
             complementar información y son pre programadas por el navegador,
@@ -196,8 +205,8 @@
             como src
           </p>
         </div>
-        <div>
-          CSS
+        <div class="post-element">
+          <h3 class="element_title">6. CSS</h3>
           <div>
             <p>
               Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o
@@ -205,77 +214,105 @@
               presentación de documentos HTML
             </p>
             <img
+            class="post-img"
               src="./images/css.png"
               alt="Imagen ilustrativa de codigo csss"
-              width="966"
-              height="458"
+              height="155"
             />
           </div>
         </div>
       </section>
-      <section>
-        <h2>Modelo de caja</h2>
-        <p>
-          Chrome va a ser el navegador que utilizaremos en el curso por su
-          extenso soporte de nuevos estándares y herramientas de desarrollo
-          avanzadas y de amigable uso.
-        </p>
-        <ol>
-          <li>Tamaño del del contenido / ancho y alto</li>
-          <li>Padding / Relleno</li>
-          <li>Border / Bordes</li>
-          <li>Margin / Márgenes</li>
-        </ol>
-        <h3>Propiedades físicas para el modelo de caja:</h3>
-        <ul>
-          <li>width / height</li>
-          <li>
-            margin / margin-top | margin-right | margin-bottom | margin-left
-          </li>
-          <li>
-            border / border-top | border-right | border-bottom | border-left
-          </li>
-          <li>
-            padding / padding-top | padding-right | padding-bottom |
-            padding-left
-          </li>
-        </ul>
-        <h3>Propiedades lógicas para el modelo de caja:</h3>
-        <ul>
-          <li>inline-size / block-size</li>
-          <li>
-            margin-block | margin-inline | margin-block-start | margin-block-end
-            | margin-inline-start | margin-inline-end
-          </li>
-          <li>
-            border-block | border-inline | border-block-start | border-block-end
-            | border-inline-start | border-inline-end
-          </li>
-          <li>
-            padding-block | padding-inline | padding-block-start |
-            padding-block-end | padding-inline-start | padding-inline-end
-          </li>
-        </ul>
-        <h3>Modelo de caja</h3>
-        <img src="./images/leo.png" alt="" />
+      <section class="post box-model">
+        <h2 class="post-title">Modelo de caja</h2>
+        <div class="post-element">
+          <h4 class="element_title">El modelo de caja está compuesto por:</h4>
+          <p class="post-description">
+            Chrome va a ser el navegador que utilizaremos en el curso por su
+            extenso soporte de nuevos estándares y herramientas de desarrollo
+            avanzadas y de amigable uso.
+          </p>
+          <ol>
+            <li>Tamaño del del contenido / ancho y alto</li>
+            <li>Padding / Relleno</li>
+            <li>Border / Bordes</li>
+            <li>Margin / Márgenes</li>
+          </ol>
+        </div>
+        <div class="post-element">
+          <h3 class="element_title">Propiedades físicas para el modelo de caja:</h3>
+          <ul class="prop-list">
+            <li>width / height</li>
+            <li>
+              margin / margin-top | margin-right | margin-bottom | margin-left
+            </li>
+            <li>
+              border / border-top | border-right | border-bottom | border-left
+            </li>
+            <li>
+              padding / padding-top | padding-right | padding-bottom |
+              padding-left
+            </li>
+          </ul>
+        </div>
+        <div class="post-element">
+          <h3 class="element_title">Propiedades lógicas para el modelo de caja:</h3>
+          <ul class="prop-list">
+            <li>inline-size / block-size</li>
+            <li>
+              margin-block | margin-inline | margin-block-start |
+              margin-block-end | margin-inline-start | margin-inline-end
+            </li>
+            <li>
+              border-block | border-inline | border-block-start |
+              border-block-end | border-inline-start | border-inline-end
+            </li>
+            <li>
+              padding-block | padding-inline | padding-block-start |
+              padding-block-end | padding-inline-start | padding-inline-end
+            </li>
+          </ul>
+        </div>
       </section>
-      <p>
-        Si tienes alguna pregunta escríbeme a
-        <a href="">me@leonidasesteban.com</a>
-      </p>
-      <form action="">
-        <h3>Suscríbete a nuestro newsletter</h3>
-        <input type="text" placeholder="Nombre" name="" id="" />
-        <input type="text" placeholder="Email" name="" id="" />
-        <button type="submit">Suscribirme</button>
+      <div class="galery">
+        <img src="./images/leo.png" alt="" height="183" />
+      </div>
+      <div class="contact-info">
+        <p>
+          Si tienes alguna pregunta escríbeme a
+          <a class="email-link" href="">me@emiberon.com</a>
+        </p>
+      </div>
+      <form action="" class="subcription">
+        <h3 class="form-title">Suscríbete a nuestro newsletter</h3>
+        <input
+          class="input name"
+          type="text"
+          placeholder="Nombre"
+          name="name"
+          id="name"
+        />
+        <input
+          class="input mail"
+          type="text"
+          placeholder="Email"
+          name="email"
+          id="email"
+        />
+        <button class="button" type="submit">Suscribirme</button>
       </form>
     </main>
-    <footer>
-      <h2>© Emiliano Beron 2021</h2>
-      <div class="social">
-        <a href="">ins</a>
-        <a href="">face</a>
-        <a href="">twitter</a>
+    <footer class="footer">
+      <h4 class="copyright">© Emiliano Beron 2021</h2>
+      <div class="social-links">
+        <a href="">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-twitter-square" aria-hidden="true"></i>
+        </a>
       </div>
     </footer>
   </body>
