@@ -1,0 +1,15 @@
+@use '../util' as *;
+
+.setup {
+  .setup__element {
+    margin-block: rem(40);
+    :last-child {
+      margin-block-end: 0px;
+    }
+    .element_title {
+      font: var(--subTitle);
+      font-size: rem(20);
+      color: var(--dark);
+    }
+  }
+}

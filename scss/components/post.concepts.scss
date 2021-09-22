@@ -1,0 +1,19 @@
+@use '../util' as *;
+.concepts {
+  h3 {
+    color: var(--dark);
+    margin-block-end: rem(16);
+  }
+  .post-element {
+    color: var(--dark);
+    margin-block: rem(24);
+    .html-code {
+      background-color: var(--bg-gray);
+      padding-block: 16px;
+      padding-inline: 16px;
+      pre {
+        margin: 0;
+      }
+    }
+  }
+}

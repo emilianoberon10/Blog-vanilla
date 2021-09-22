@@ -1,0 +1,25 @@
+@use '../util' as *;
+@forward 'post.setup';
+@forward 'post.concepts';
+@forward 'post.boxModel';
+.post {
+  margin-block-end: rem(40);
+  .post-title {
+    width: 100%;
+    font: var(--h3);
+    color: var(--darker);
+  }
+  .element_title {
+    font: var(--subTitle);
+    font-size: rem(20);
+    color: var(--dark);
+  }
+
+  .post-img {
+    width: 328px;
+    @include breakpoint(medium) {
+      width: 966px;
+      height: 500px;
+    }
+  }
+}

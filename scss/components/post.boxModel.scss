@@ -1,0 +1,14 @@
+@use '../util' as *;
+.box-model {
+  ol {
+    padding-inline: 16px;
+  }
+  ul {
+    padding-inline: 16px;
+  }
+  li {
+    font: var(--list);
+    color: var(--dark);
+    margin-block-end: 16px;
+  }
+}
